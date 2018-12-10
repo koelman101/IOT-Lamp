@@ -4,7 +4,7 @@ const app = express()
 let statusLampu = 0;
 let statusLampu2 = 0;
 
-app.listen(3000,function(){
+app.listen(process.env.port||3000,function(){
     console.log("Server is running")
 })
 
